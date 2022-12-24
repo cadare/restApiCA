@@ -1,9 +1,9 @@
-const url = "https://brbforum.com/wp-json/wp/v2/posts?consumer_key=ck_f594e7cc7bc4a0174b4687b924a966264f7bf578&consumer_secret=cs_b13b4fd6e8bc3e176bb2e74a3c4ded2f8e3c4fea"
+const url = "https://brbforum.com/wp-json/wp/v2/posts?"
 
-
+console.log(url)
 
 const productContainer = document.querySelector('.productPage');
-const productShow = document.querySelector('.product-item')
+
 
 async function getProducts(url) {
     const response = await fetch(url);
@@ -47,3 +47,8 @@ function displayProducts(products) {
 
     })
 }
+
+//https://brbforum.com/wp-json/wp/v2/posts?consumer_key=ck_f594e7cc7bc4a0174b4687b924a966264f7bf578&consumer_secret=cs_b13b4fd6e8bc3e176bb2e74a3c4ded2f8e3c4fea
+
+
+//https://brbforum.com/wp-json/wp/v2/postsnull?consumer_key=ck_f594e7cc7bc4a0174b4687b924a966264f7bf578&consumer_secret=cs_b13b4fd6e8bc3e176bb2e74a3c4ded2f8e3c4fea
