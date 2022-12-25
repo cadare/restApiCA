@@ -39,7 +39,7 @@ fetchProduct();
 
 
 function createHtml(detail) {
-    detailContainer.innerHTML = ` <div class="mainDetail">
+    detailContainer.innerHTML = ` <div class="mainDetail detailItems">
  
     <h1 class="title">${detail.title.rendered}</h1>
   
