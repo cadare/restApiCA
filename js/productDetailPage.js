@@ -1,17 +1,20 @@
-const detailContainer = document.querySelector(".product-item")
+const detailContainer = document.querySelector(".product-item");
+
+
 
 
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
-console.log(params)
+
 const id = params.get("id");
-console.log(id)
 
-const url = "https://brbforum.com/wp-json/wp/v2/posts?" + id + "consumer_key=ck_e2d9fbe500efaee3fc293ea6d4275f96879bfa9c&consumer_secret=cs_d03736e5aa11368413a492d2c5bb10af30f292a1"
 
-console.log(url)
-async function fetchGame() {
+
+const url = ("https://brbforum.com/wp-json/wp/v2/posts/" + id + "?consumer_key=ck_e2d9fbe500efaee3fc293ea6d4275f96879bfa9c")
+
+
+async function fetchProduct() {
 
     try {
         const response = await fetch(url);
@@ -28,16 +31,22 @@ async function fetchGame() {
 
 }
 
-fetchGame();
+fetchProduct();
 
 
 
 
 
 
+function createHtml(detail) {
+    detailContainer.innerHTML = ` <div class="mainDetail">
+ 
+    <h1 class="title">${detail.title.rendered}</h1>
+  
+    <p>${detail.content.rendered}</p>
+    <p>${detail.date}</p>
+ 
+                               </div>
+                             `;
 
-
-function createHtml(details) {
-    detailContainer.innerHTML = `<h1>${details.title}</h1>
-      `
 }

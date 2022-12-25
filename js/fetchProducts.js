@@ -24,31 +24,17 @@ function displayProducts(products) {
         productContainer.innerHTML +=
 
             ` 
-        <a href="product-items.html" class="card_fetch">
+            <div class="mainDetail mainFetch">
+        <a href="product-items.html?id=${product.id}" class="card_fetch">
      
        
         <h1 class="title">${product.title.rendered}<h1/>
         
         
-        <p class="paragrpy">${product.excerpt.rendered}<p/>
-      
-                                    
-                                                                                                                                                                                                   
-                                      
-                                     
-                                        
-        </a>    `;
-
-
-
-
-
+        <p class="paragrapy">${product.excerpt.rendered}<p/>
+       </a>  
+         </div>   `
 
 
     })
 }
-
-//https://brbforum.com/wp-json/wp/v2/posts?consumer_key=ck_f594e7cc7bc4a0174b4687b924a966264f7bf578&consumer_secret=cs_b13b4fd6e8bc3e176bb2e74a3c4ded2f8e3c4fea
-
-
-//https://brbforum.com/wp-json/wp/v2/postsnull?consumer_key=ck_f594e7cc7bc4a0174b4687b924a966264f7bf578&consumer_secret=cs_b13b4fd6e8bc3e176bb2e74a3c4ded2f8e3c4fea

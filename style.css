@@ -1,13 +1,37 @@
 body{
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+  
 }
 
 
-.card_fetch{
-  margin: 10rem 30rem; 
+
+
+h1{
+  color:#333;
+  text-align: center;
+  font-weight: bolder;
+font-size: 30px;
+font-weight: bolder;
 }
-.card_fetch, a,h1,p{
+
+p{
+  line-height: 1.2;
+font-size: 18px;
+
+}
+.card_fetch, a,p{
   color:#333;
   text-decoration: none;
   text-align: left;
 }
+
+.mainDetail{
+
+  margin:4rem 10rem;
+  padding:0rem 5rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 13px 10px -20px;
+
+}
+
+
