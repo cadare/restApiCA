@@ -8,8 +8,8 @@
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #f1f1f1;
-  height: 100vh;
-
+  /* height: 100%; */
+  min-height: 100vh;
 }
 
 .navbar {
@@ -62,7 +62,7 @@ color:black;
 }
 
 .detailItems h1{
-  padding: 4rem 0;
+  padding: 2rem 0;
   
 }
 
@@ -72,8 +72,9 @@ line-height: 1.5;
 }
 
 .main{
-  height:100%;
-padding-top: 2rem;
+ 
+padding:2rem  3rem 0 3rem;
+
 
 }
 
@@ -124,7 +125,7 @@ padding-top: 2rem;
 .mainDetail{
   max-width: 800px;
   margin: 1rem auto;
-  padding-top:5rem;
+  padding:2rem  3rem 0 3rem;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
