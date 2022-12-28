@@ -27,7 +27,7 @@ function displayProducts(products) {
             <div class="mainDetail mainFetch">
         <a href="product-items.html?id=${product.id}" class="card_fetch">
      
-       
+  
         <h1 class="title">${product.title.rendered}<h1/>
         
         
