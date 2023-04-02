@@ -1,4 +1,4 @@
-const url = "https://brbforum.com/wp-json/wp/v2/posts?"
+const url = "https://sookoob.com/wp-json/wp/v2/posts?"
 
 console.log(url)
 
@@ -26,14 +26,23 @@ function displayProducts(products) {
             ` 
             <div class="mainDetail mainFetch">
         <a href="product-items.html?id=${product.id}" class="card_fetch">
-     
+    
   
         <h1 class="title">${product.title.rendered}<h1/>
-        
+        <p>${product.comment_status}</p>
+       
         
         <p class="paragrapy">${product.excerpt.rendered}<p/>
+        
        </a>  
-         </div>   `
+       
+         
+         <div class="product-images" 
+         style="background-image: url('${product.better_featured_image
+             .source_url}')"></div>
+
+             </div>  
+         `
 
 
     })

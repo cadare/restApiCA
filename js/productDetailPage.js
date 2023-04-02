@@ -11,7 +11,7 @@ const id = params.get("id");
 
 
 
-const url = ("https://brbforum.com/wp-json/wp/v2/posts/" + id + "?consumer_key=ck_e2d9fbe500efaee3fc293ea6d4275f96879bfa9c")
+const url = ("https://sookoob.com/wp-json/wp/v2/posts/" + id + "?consumer_key=ck_c46e68c954377a76a671318b1b1492e8a0079833")
 
 
 async function fetchProduct() {
@@ -39,12 +39,20 @@ fetchProduct();
 
 
 function createHtml(detail) {
+
     detailContainer.innerHTML = ` <div class="mainDetail detailItems">
     <h1 class="title">${detail.title.rendered}</h1>
+    
+    <div class="details-image" 
+    style="background-image: url('${detail.better_featured_image
+        .source_url}')"></div>
+
+    
   
     <p>${detail.content.rendered}</p>
     <p>${detail.date}</p>
  
+                               </div>
                                </div>
                              `;
 
