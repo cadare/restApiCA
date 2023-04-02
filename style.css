@@ -123,6 +123,11 @@ text-decoration: none;
 line-height: 1.5;
 }
 
+.address-bar-icon{
+font-size: 120px;
+border:1px solid #fff
+}
+
 
 
 .button-27 {
